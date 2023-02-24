@@ -18,7 +18,7 @@ import models
 class HBNBCommand(cmd.Cmd):
     """class HBNBCommand qui herite cmd.Cmd"""
 
-
+    prompt = "(hbnb)"
     list_class = ["BaseModel", "User"]
     list_function = ['show' 'create', 'destroy', 'update', 'all']
     def precmd(self, arg):
@@ -32,7 +32,6 @@ class HBNBCommand(cmd.Cmd):
                     arg = my_func[0] + ' ' + my_class[0] + ' ' + param[0]
         return arg
 
-    prompt = "(hbnb)"
 
     def do_quit(self, arg):
         """Quit command to exit the program"""
