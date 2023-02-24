@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""File file_storage.PY"""
+
+
 import cmd
 from models.base_model import BaseModel
 from models.engine.file_storage import FileStorage
@@ -9,9 +13,6 @@ from models.place import Place
 from models.review import Review
 import sys
 import models
-
-
-"""File file_storage.PY"""
 
 
 class HBNBCommand(cmd.Cmd):
